@@ -1,0 +1,9 @@
+{
+  "name": "WhatsappWebDesktop",
+  "permissions": [
+    "webview"
+  ],
+  "webview": {
+    "partitions": []
+  }
+}

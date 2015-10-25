@@ -1,0 +1,30 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'electron-prebuilt',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose node symlink /usr/bin/node
+5 verbose install initial load of /home/paranoia/WhatsappDesktop/package.json
+6 verbose stack Error: Invalid name: "Whatsapp Web Desktop"
+6 verbose stack     at ensureValidName (/usr/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:327:15)
+6 verbose stack     at Object.module.exports.fixNameField (/usr/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:210:5)
+6 verbose stack     at /usr/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:32:38
+6 verbose stack     at Array.forEach (native)
+6 verbose stack     at normalize (/usr/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:31:15)
+6 verbose stack     at final (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:338:5)
+6 verbose stack     at then (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:113:5)
+6 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:284:20
+6 verbose stack     at evalmachine.<anonymous>:263:20
+6 verbose stack     at OpenReq.Req.done (/usr/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:141:5)
+7 verbose cwd /home/paranoia/WhatsappDesktop
+8 error Linux 3.16.0-4-amd64
+9 error argv "/usr/bin/node" "/usr/bin/npm" "install" "electron-prebuilt" "--save-dev"
+10 error node v0.12.7
+11 error npm  v2.11.3
+12 error Invalid name: "Whatsapp Web Desktop"
+13 error If you need help, you may report this error at:
+13 error     <https://github.com/npm/npm/issues>
+14 verbose exit [ 1, true ]
