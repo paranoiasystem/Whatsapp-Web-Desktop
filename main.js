@@ -17,19 +17,21 @@ app.on('window-all-closed', function(){
 
 app.on('ready', function(){
 	// icona nell'area di notifica
-	appIcon = new Tray('whatsapp.png');
+	if(process.platform != 'win32'){
+		appIcon = new Tray('whatsapp.png');
 
-	var contextMenu = Menu.buildFromTemplate([
-		{ label: 'Chiudi', click: function() { app.quit(); } }
-	]);
+		var contextMenu = Menu.buildFromTemplate([
+			{ label: 'Chiudi', click: function() { app.quit(); } }
+		]);
 
-	appIcon.setToolTip('Whatsapp Web Desktop.');
-	appIcon.setContextMenu(contextMenu);
+		appIcon.setToolTip('Whatsapp Web Desktop.');
+		appIcon.setContextMenu(contextMenu);
 
-	appIcon.on('clicked', function(){
-		mainWindows.restore();
-		mainWindows.focus();
-	});
+		appIcon.on('clicked', function(){
+			mainWindows.restore();
+			mainWindows.focus();
+		});
+	}
 
 	mainWindows = new BrowserWindow({width:800, height:600, title: 'Whatsapp Web Desktop', 'auto-hide-menu-bar': true, icon: 'whatsapp.png'});
 
